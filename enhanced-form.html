@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Skill Opportunity</title>
+</head>
+<body>
+  <h1>Data Analyst & Web Developer Required</h1>
+
+  <h2>List of Skills</h2>
+  <ul>
+    <li>HTML & CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+  </ul>
+
+  <h2>Skills Table</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML & CSS</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Intermediate</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Media</h2>
+  <img src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg" alt="Placeholder Image" width="300" height="300" />
+  <br /><br />
+  <video width="320" height="180" controls>
+    <source src="https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4" type="video/mp4" />
+    Your browser does not support video playback.
+  </video>
+
+  <h2>Registration Form</h2>
+  <form action="https://example.com/submit" method="post" autocomplete="on">
+    <label for="fullname">Full Name:</label><br />
+    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name" />
+    <br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email" />
+    <br /><br />
+
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" minlength="8" required autocomplete="new-password" />
+    <br /><br />
+
+    <label>Gender:</label><br />
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
+    <br /><br />
+
+    <label for="role">Preferred Role:</label><br />
+    <select id="role" name="role" required>
+      <option value="">Select a role</option>
+      <option value="frontend">Frontend Developer</option>
+      <option value="backend">Backend Developer</option>
+      <option value="fullstack">Full Stack Developer</option>
+    </select>
+    <br /><br />
+
+    <label for="bio">Short Bio:</label><br />
+    <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." maxlength="200"></textarea>
+    <br /><br />
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
