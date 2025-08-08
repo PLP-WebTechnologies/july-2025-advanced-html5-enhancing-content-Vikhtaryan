@@ -3,85 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Job Skill Opportunity</title>
+  <title>Job Opportunity: Data Analyst & Web Developer</title>
 </head>
 <body>
-  <h1>Data Analyst & Web Developer Required</h1>
+  <h1>Data Analyst &amp; Web Developer Position</h1>
 
-  <h2>List of Skills</h2>
-  <ul>
-    <li>HTML & CSS</li>
-    <li>JavaScript</li>
-    <li>Python</li>
-  </ul>
+  <section>
+    <h2>Required Skills</h2>
+    <ul>
+      <li>HTML &amp; CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </section>
 
-  <h2>Skills Table</h2>
-  <table border="1" cellpadding="6" cellspacing="0">
-    <thead>
-      <tr>
-        <th>Skill</th>
-        <th>Level</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>HTML & CSS</td>
-        <td>Advanced</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>Intermediate</td>
-      </tr>
-      <tr>
-        <td>Python</td>
-        <td>Intermediate</td>
-      </tr>
-    </tbody>
-  </table>
+  <section>
+    <h2>Skill Levels</h2>
+    <table border="1" cellpadding="6" cellspacing="0" summary="Listing of skills and proficiency levels">
+      <thead>
+        <tr>
+          <th scope="col">Skill</th>
+          <th scope="col">Proficiency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML &amp; CSS</td>
+          <td>Advanced</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Intermediate</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-  <h2>Media</h2>
-  <img src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg" alt="Placeholder Image" width="300" height="300" />
-  <br /><br />
-  <video width="320" height="180" controls>
-    <source src="https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4" type="video/mp4" />
-    Your browser does not support video playback.
-  </video>
+  <section>
+    <h2>Media Preview</h2>
+    <figure>
+      <img src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg" alt="Person working at a computer" width="300" height="300" />
+      <figcaption>Workplace environment</figcaption>
+    </figure>
+    <figure>
+      <video width="320" height="180" controls>
+        <source src="https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4" type="video/mp4" />
+        Your browser does not support video playback.
+      </video>
+      <figcaption>Example project demo</figcaption>
+    </figure>
+  </section>
 
-  <h2>Registration Form</h2>
-  <form action="https://example.com/submit" method="post" autocomplete="on">
-    <label for="fullname">Full Name:</label><br />
-    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name" />
-    <br /><br />
+  <section>
+    <h2>Sign-Up Form</h2>
+    <form action="https://example.com/submit" method="post" autocomplete="on">
+      <div>
+        <label for="userid">User ID:</label><br />
+        <input type="text" id="userid" name="userid" value="12345" readonly aria-readonly="true" />
+      </div>
+      <br />
 
-    <label for="email">Email:</label><br />
-    <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email" />
-    <br /><br />
+      <div>
+        <label for="fullname">Full Name:</label><br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Jane Doe"
+          required
+          autocomplete="name"
+          minlength="2"
+          pattern="[A-Za-z\s.'-]{2,}"
+          title="Please enter your full name using letters only."
+        />
+      </div>
+      <br />
 
-    <label for="password">Password:</label><br />
-    <input type="password" id="password" name="password" minlength="8" required autocomplete="new-password" />
-    <br /><br />
+      <div>
+        <label for="email">Email Address:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your.email@example.com"
+          required
+          autocomplete="email"
+        />
+      </div>
+      <br />
 
-    <label>Gender:</label><br />
-    <input type="radio" id="male" name="gender" value="male" required />
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female" />
-    <label for="female">Female</label>
-    <br /><br />
+      <div>
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          required
+          autocomplete="new-password"
+          pattern=".{8,}"
+          title="Password must be at least 8 characters."
+        />
+      </div>
+      <br />
 
-    <label for="role">Preferred Role:</label><br />
-    <select id="role" name="role" required>
-      <option value="">Select a role</option>
-      <option value="frontend">Frontend Developer</option>
-      <option value="backend">Backend Developer</option>
-      <option value="fullstack">Full Stack Developer</option>
-    </select>
-    <br /><br />
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+      <br />
 
-    <label for="bio">Short Bio:</label><br />
-    <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." maxlength="200"></textarea>
-    <br /><br />
+      <div>
+        <label for="role">Preferred Role:</label><br />
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Choose a role</option>
+          <option value="frontend">Frontend Developer</option>
+
 
     <button type="submit">Register</button>
   </form>
 </body>
 </html>
+
